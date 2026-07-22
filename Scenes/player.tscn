@@ -3,8 +3,14 @@
 [ext_resource type="Script" uid="uid://de8nk30rhul6f" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://de0v2l54ojao6" path="res://Sprites/Sprite-0001.png" id="1_v0iea"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_xtgm7"]
+radius = 8.0
+
 [node name="Player" type="CharacterBody2D" unique_id=1164279839]
 script = ExtResource("1_cvnsp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=48592774]
 texture = ExtResource("1_v0iea")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1111181463]
+shape = SubResource("CircleShape2D_xtgm7")
