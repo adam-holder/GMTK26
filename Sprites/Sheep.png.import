@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de0v2l54ojao6"
-path="res://.godot/imported/Sprite-0001.png-70bd1a6433673a0f1a07449d081529fb.ctex"
+uid="uid://bky7ndjpad3h0"
+path="res://.godot/imported/Sheep.png-236969288d9da31c5410340098ea9c3b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sprite-0001.png"
-dest_files=["res://.godot/imported/Sprite-0001.png-70bd1a6433673a0f1a07449d081529fb.ctex"]
+source_file="res://Sprites/Sheep.png"
+dest_files=["res://.godot/imported/Sheep.png-236969288d9da31c5410340098ea9c3b.ctex"]
 
 [params]
 
