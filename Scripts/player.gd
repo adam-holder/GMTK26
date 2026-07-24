@@ -1,11 +1,14 @@
 extends CharacterBody2D
 
 @onready var body = $Body
+var start_pos
 
 const speed = 50.0
 
 func _ready():
-	pass
+	start_pos = position
+	Globals.reset.connect(reset)
+	Globals.timeup.connect(timeup)
 
 func _physics_process(_delta):
 	velocity = Input.get_vector("move_left", "move_right", "move_up", "move_down")*speed
@@ -22,3 +25,9 @@ func _physics_process(_delta):
 			body.play("walk_down")
 		else:
 			body.play("walk_up")
+
+func reset():
+	position = start_pos
+	show()
+
+func timeup(): hide()

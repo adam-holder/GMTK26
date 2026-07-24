@@ -20,3 +20,29 @@ offset_right = 227.0
 offset_bottom = 82.0
 theme_override_font_sizes/font_size = 24
 text = "Sheep Collected: 0"
+
+[node name="TempEnd" type="Control" parent="." unique_id=1587933530]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Label" type="Label" parent="TempEnd" unique_id=439582751]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 576.0
+theme_override_font_sizes/font_size = 24
+text = "Oh no! You woke up without counting the last shoop!
+Your dream lasted 30 seconds.
+You collected 0 sheep!
+Try again?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Reset" type="Button" parent="TempEnd" unique_id=1191694871]
+layout_mode = 0
+offset_left = 552.0
+offset_top = 376.0
+offset_right = 600.0
+offset_bottom = 407.0
+text = "Zzz..."
+
+[connection signal="pressed" from="TempEnd/Reset" to="." method="reset"]

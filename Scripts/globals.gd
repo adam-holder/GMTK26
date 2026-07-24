@@ -4,4 +4,9 @@ extends Node
 var shoop_mod = 1
 
 @warning_ignore_start("unused_signal")
+##Signal emitted when a shoop is collected
 signal shoop_collected
+##Signal emitted when the timer hits 0
+signal timeup
+##Signal emitted when restarting the game
+signal reset
