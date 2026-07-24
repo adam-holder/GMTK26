@@ -7,7 +7,7 @@ const speed = 50.0
 func _ready():
 	pass
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	velocity = Input.get_vector("move_left", "move_right", "move_up", "move_down")*speed
 	move_and_slide()
 	if velocity.length() < .01:

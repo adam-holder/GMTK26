@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ciroeqmbs18wa"]
+
+[ext_resource type="Script" uid="uid://bida4qy45nh0n" path="res://Scripts/hud.gd" id="1_e0onf"]
+
+[node name="Hud" type="CanvasLayer" unique_id=1087089585]
+script = ExtResource("1_e0onf")
+
+[node name="Remaining" type="Label" parent="." unique_id=2093261481]
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 215.0
+offset_bottom = 42.0
+theme_override_font_sizes/font_size = 24
+text = "Time Remaining: "
