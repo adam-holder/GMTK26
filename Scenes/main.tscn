@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dvqgighdgolp3" path="res://Scenes/player.tscn" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://dakng3vxmm8mg" path="res://Scenes/tile map.tscn" id="2_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://ciroeqmbs18wa" path="res://Scenes/hud.tscn" id="3_8gbba"]
+[ext_resource type="PackedScene" uid="uid://76ksroerm34w" path="res://Scenes/shoop.tscn" id="4_jjvhh"]
 
 [node name="Main" type="Node2D" unique_id=1329993581]
 metadata/_edit_horizontal_guides_ = [-85.0]
@@ -14,3 +15,5 @@ position = Vector2(38, 33)
 
 [node name="Hud" parent="." unique_id=1087089585 instance=ExtResource("3_8gbba")]
 visible = false
+
+[node name="Shoop" parent="." unique_id=1634813056 instance=ExtResource("4_jjvhh")]

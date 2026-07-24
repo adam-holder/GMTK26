@@ -8,9 +8,13 @@ var timer = timer_start
 signal timeup
 var timer_ended = false
 
+var shoop_count = 0
+
 func _ready():
 	#This is so we don't need to worry about hiding/showing the HUD in main while editing
 	show()
+	
+	Globals.shoop_collected.connect(shoop_collected)
 
 func _process(delta):
 	if timer_ended: return
@@ -26,7 +30,14 @@ func _process(delta):
 	#Else, display seconds as an int (rounded down)
 	else: $Remaining.text = "Time Remaining: " + str(timer).split(".")[0]
 
-## Resets the timer functionality in the HUD
+##Resets the HUD
 func reset():
 	timer = timer_start
 	timer_ended = false
+	shoop_count = 0
+
+##Happens when a shoop is collected
+func shoop_collected():
+	timer += Globals.shoop_mod
+	shoop_count += 1
+	$Sheep.text = "Sheep Collected: " + str(shoop_count)
