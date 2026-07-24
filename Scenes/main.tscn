@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dvqgighdgolp3" path="res://Scenes/player.tscn" id="1_jjgbg"]
 [ext_resource type="PackedScene" uid="uid://dakng3vxmm8mg" path="res://Scenes/tile map.tscn" id="2_bo1nx"]
+[ext_resource type="PackedScene" uid="uid://ciroeqmbs18wa" path="res://Scenes/hud.tscn" id="3_8gbba"]
 
 [node name="Main" type="Node2D" unique_id=1329993581]
 metadata/_edit_horizontal_guides_ = [-85.0]
@@ -10,3 +11,6 @@ metadata/_edit_horizontal_guides_ = [-85.0]
 
 [node name="Player" parent="." unique_id=1164279839 instance=ExtResource("1_jjgbg")]
 position = Vector2(38, 33)
+
+[node name="Hud" parent="." unique_id=1087089585 instance=ExtResource("3_8gbba")]
+visible = false
