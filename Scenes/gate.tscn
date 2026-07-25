@@ -1,0 +1,871 @@
+[gd_scene format=3 uid="uid://dwdy6lg8c12iq"]
+
+[ext_resource type="Texture2D" uid="uid://bky7ndjpad3h0" path="res://Sprites/Sheep.png" id="1_1lkl7"]
+[ext_resource type="Script" uid="uid://uc40pet4bcdy" path="res://Scripts/gate.gd" id="1_hn85u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ca5jm"]
+atlas = ExtResource("1_1lkl7")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4q1q2"]
+atlas = ExtResource("1_1lkl7")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4nf6r"]
+atlas = ExtResource("1_1lkl7")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqqyk"]
+atlas = ExtResource("1_1lkl7")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hn85u"]
+animations = [{
+"frames": [{
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_ca5jm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4q1q2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4nf6r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qqqyk")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_41glk"]
+size = Vector2(80, 128)
+
+[node name="Gate" type="Node2D" unique_id=1676832065]
+script = ExtResource("1_hn85u")
+
+[node name="Path" type="ColorRect" parent="." unique_id=390220081]
+offset_left = -40.0
+offset_top = -64.0
+offset_right = 40.0
+offset_bottom = 64.0
+color = Color(0.4434168, 0.21741936, 0.058882512, 1)
+
+[node name="Clouds" type="Node2D" parent="." unique_id=1454340302]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Clouds" unique_id=2135606130]
+position = Vector2(32, -64)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Clouds" unique_id=1975992659]
+position = Vector2(32, -56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Clouds" unique_id=2145736764]
+position = Vector2(32, -48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Clouds" unique_id=333545729]
+position = Vector2(32, -40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="Clouds" unique_id=578031097]
+position = Vector2(32, -32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D6" type="AnimatedSprite2D" parent="Clouds" unique_id=391008024]
+position = Vector2(32, -24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="Clouds" unique_id=1337107226]
+position = Vector2(32, -16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D8" type="AnimatedSprite2D" parent="Clouds" unique_id=277940408]
+position = Vector2(32, -8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D9" type="AnimatedSprite2D" parent="Clouds" unique_id=170272964]
+position = Vector2(32, 0)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D10" type="AnimatedSprite2D" parent="Clouds" unique_id=904465249]
+position = Vector2(32, 8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D11" type="AnimatedSprite2D" parent="Clouds" unique_id=1573861594]
+position = Vector2(32, 16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D12" type="AnimatedSprite2D" parent="Clouds" unique_id=140589812]
+position = Vector2(32, 24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D13" type="AnimatedSprite2D" parent="Clouds" unique_id=382018776]
+position = Vector2(32, 32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D14" type="AnimatedSprite2D" parent="Clouds" unique_id=227961048]
+position = Vector2(32, 40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D15" type="AnimatedSprite2D" parent="Clouds" unique_id=2089443140]
+position = Vector2(32, 48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D16" type="AnimatedSprite2D" parent="Clouds" unique_id=1113727887]
+position = Vector2(32, 56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D17" type="AnimatedSprite2D" parent="Clouds" unique_id=1537594239]
+position = Vector2(24, -64)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D18" type="AnimatedSprite2D" parent="Clouds" unique_id=822913713]
+position = Vector2(24, -56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D19" type="AnimatedSprite2D" parent="Clouds" unique_id=203264581]
+position = Vector2(24, -48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D20" type="AnimatedSprite2D" parent="Clouds" unique_id=811117211]
+position = Vector2(24, -40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D21" type="AnimatedSprite2D" parent="Clouds" unique_id=649339402]
+position = Vector2(24, -32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D22" type="AnimatedSprite2D" parent="Clouds" unique_id=1573599620]
+position = Vector2(24, -24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D23" type="AnimatedSprite2D" parent="Clouds" unique_id=1572966044]
+position = Vector2(24, -16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D24" type="AnimatedSprite2D" parent="Clouds" unique_id=104672933]
+position = Vector2(24, -8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D25" type="AnimatedSprite2D" parent="Clouds" unique_id=1975627623]
+position = Vector2(24, 0)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D26" type="AnimatedSprite2D" parent="Clouds" unique_id=952919456]
+position = Vector2(24, 8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D27" type="AnimatedSprite2D" parent="Clouds" unique_id=795204169]
+position = Vector2(24, 16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D28" type="AnimatedSprite2D" parent="Clouds" unique_id=1612127486]
+position = Vector2(24, 24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D29" type="AnimatedSprite2D" parent="Clouds" unique_id=273312163]
+position = Vector2(24, 32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D30" type="AnimatedSprite2D" parent="Clouds" unique_id=1848655597]
+position = Vector2(24, 40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D31" type="AnimatedSprite2D" parent="Clouds" unique_id=821182816]
+position = Vector2(24, 48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D32" type="AnimatedSprite2D" parent="Clouds" unique_id=153070584]
+position = Vector2(24, 56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D33" type="AnimatedSprite2D" parent="Clouds" unique_id=261070039]
+position = Vector2(16, -64)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D34" type="AnimatedSprite2D" parent="Clouds" unique_id=1906802172]
+position = Vector2(16, -56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D35" type="AnimatedSprite2D" parent="Clouds" unique_id=217752228]
+position = Vector2(16, -48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D36" type="AnimatedSprite2D" parent="Clouds" unique_id=941115010]
+position = Vector2(16, -40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D37" type="AnimatedSprite2D" parent="Clouds" unique_id=945967495]
+position = Vector2(16, -32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D38" type="AnimatedSprite2D" parent="Clouds" unique_id=79589827]
+position = Vector2(16, -24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D39" type="AnimatedSprite2D" parent="Clouds" unique_id=368723306]
+position = Vector2(16, -16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D40" type="AnimatedSprite2D" parent="Clouds" unique_id=8646646]
+position = Vector2(16, -8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D41" type="AnimatedSprite2D" parent="Clouds" unique_id=1083029191]
+position = Vector2(16, 0)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D42" type="AnimatedSprite2D" parent="Clouds" unique_id=508012802]
+position = Vector2(16, 8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D43" type="AnimatedSprite2D" parent="Clouds" unique_id=1721831121]
+position = Vector2(16, 16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D44" type="AnimatedSprite2D" parent="Clouds" unique_id=789501835]
+position = Vector2(16, 24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D45" type="AnimatedSprite2D" parent="Clouds" unique_id=778791711]
+position = Vector2(16, 32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D46" type="AnimatedSprite2D" parent="Clouds" unique_id=167086756]
+position = Vector2(16, 40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D47" type="AnimatedSprite2D" parent="Clouds" unique_id=929857393]
+position = Vector2(16, 48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D48" type="AnimatedSprite2D" parent="Clouds" unique_id=1083098017]
+position = Vector2(16, 56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D49" type="AnimatedSprite2D" parent="Clouds" unique_id=1528830788]
+position = Vector2(8, -64)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D50" type="AnimatedSprite2D" parent="Clouds" unique_id=1022739403]
+position = Vector2(8, -56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D51" type="AnimatedSprite2D" parent="Clouds" unique_id=2101642258]
+position = Vector2(8, -48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D52" type="AnimatedSprite2D" parent="Clouds" unique_id=613020542]
+position = Vector2(8, -40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D53" type="AnimatedSprite2D" parent="Clouds" unique_id=1107532490]
+position = Vector2(8, -32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D54" type="AnimatedSprite2D" parent="Clouds" unique_id=1007967982]
+position = Vector2(8, -24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D55" type="AnimatedSprite2D" parent="Clouds" unique_id=1118211177]
+position = Vector2(8, -16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D56" type="AnimatedSprite2D" parent="Clouds" unique_id=1547521213]
+position = Vector2(8, -8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D57" type="AnimatedSprite2D" parent="Clouds" unique_id=2052543262]
+position = Vector2(8, 0)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D58" type="AnimatedSprite2D" parent="Clouds" unique_id=1671202468]
+position = Vector2(8, 8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D59" type="AnimatedSprite2D" parent="Clouds" unique_id=1178403974]
+position = Vector2(8, 16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D60" type="AnimatedSprite2D" parent="Clouds" unique_id=1152081046]
+position = Vector2(8, 24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D61" type="AnimatedSprite2D" parent="Clouds" unique_id=35312054]
+position = Vector2(8, 32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D62" type="AnimatedSprite2D" parent="Clouds" unique_id=643033145]
+position = Vector2(8, 40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D63" type="AnimatedSprite2D" parent="Clouds" unique_id=740710966]
+position = Vector2(8, 48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D64" type="AnimatedSprite2D" parent="Clouds" unique_id=1135093123]
+position = Vector2(8, 56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D65" type="AnimatedSprite2D" parent="Clouds" unique_id=1929876461]
+position = Vector2(0, -64)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D66" type="AnimatedSprite2D" parent="Clouds" unique_id=918021040]
+position = Vector2(0, -56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D67" type="AnimatedSprite2D" parent="Clouds" unique_id=2082237085]
+position = Vector2(0, -48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D68" type="AnimatedSprite2D" parent="Clouds" unique_id=1126753394]
+position = Vector2(0, -40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D69" type="AnimatedSprite2D" parent="Clouds" unique_id=1347361711]
+position = Vector2(0, -32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D70" type="AnimatedSprite2D" parent="Clouds" unique_id=125668298]
+position = Vector2(0, -24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D71" type="AnimatedSprite2D" parent="Clouds" unique_id=1285436515]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D72" type="AnimatedSprite2D" parent="Clouds" unique_id=2127627435]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D73" type="AnimatedSprite2D" parent="Clouds" unique_id=240800588]
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D74" type="AnimatedSprite2D" parent="Clouds" unique_id=2119723924]
+position = Vector2(0, 8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D75" type="AnimatedSprite2D" parent="Clouds" unique_id=1281657647]
+position = Vector2(0, 16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D76" type="AnimatedSprite2D" parent="Clouds" unique_id=1107981262]
+position = Vector2(0, 24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D77" type="AnimatedSprite2D" parent="Clouds" unique_id=1937928947]
+position = Vector2(0, 32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D78" type="AnimatedSprite2D" parent="Clouds" unique_id=1980719153]
+position = Vector2(0, 40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D79" type="AnimatedSprite2D" parent="Clouds" unique_id=1877347044]
+position = Vector2(0, 48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D80" type="AnimatedSprite2D" parent="Clouds" unique_id=2126478371]
+position = Vector2(0, 56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D81" type="AnimatedSprite2D" parent="Clouds" unique_id=524465042]
+position = Vector2(-8, -64)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D82" type="AnimatedSprite2D" parent="Clouds" unique_id=258990430]
+position = Vector2(-8, -56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D83" type="AnimatedSprite2D" parent="Clouds" unique_id=402170923]
+position = Vector2(-8, -48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D84" type="AnimatedSprite2D" parent="Clouds" unique_id=803590144]
+position = Vector2(-8, -40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D85" type="AnimatedSprite2D" parent="Clouds" unique_id=563954732]
+position = Vector2(-8, -32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D86" type="AnimatedSprite2D" parent="Clouds" unique_id=1836929208]
+position = Vector2(-8, -24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D87" type="AnimatedSprite2D" parent="Clouds" unique_id=885896429]
+position = Vector2(-8, -16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D88" type="AnimatedSprite2D" parent="Clouds" unique_id=17166464]
+position = Vector2(-8, -8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D89" type="AnimatedSprite2D" parent="Clouds" unique_id=239957701]
+position = Vector2(-8, 0)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D90" type="AnimatedSprite2D" parent="Clouds" unique_id=870482777]
+position = Vector2(-8, 8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D91" type="AnimatedSprite2D" parent="Clouds" unique_id=752824296]
+position = Vector2(-8, 16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D92" type="AnimatedSprite2D" parent="Clouds" unique_id=1836064640]
+position = Vector2(-8, 24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D93" type="AnimatedSprite2D" parent="Clouds" unique_id=342927767]
+position = Vector2(-8, 32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D94" type="AnimatedSprite2D" parent="Clouds" unique_id=486910188]
+position = Vector2(-8, 40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D95" type="AnimatedSprite2D" parent="Clouds" unique_id=619908454]
+position = Vector2(-8, 48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D96" type="AnimatedSprite2D" parent="Clouds" unique_id=964062290]
+position = Vector2(-8, 56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D97" type="AnimatedSprite2D" parent="Clouds" unique_id=847114150]
+position = Vector2(-16, -64)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D98" type="AnimatedSprite2D" parent="Clouds" unique_id=584205576]
+position = Vector2(-16, -56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D99" type="AnimatedSprite2D" parent="Clouds" unique_id=874778009]
+position = Vector2(-16, -48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D100" type="AnimatedSprite2D" parent="Clouds" unique_id=1325434332]
+position = Vector2(-16, -40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D101" type="AnimatedSprite2D" parent="Clouds" unique_id=2146511580]
+position = Vector2(-16, -32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D102" type="AnimatedSprite2D" parent="Clouds" unique_id=1056072332]
+position = Vector2(-16, -24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D103" type="AnimatedSprite2D" parent="Clouds" unique_id=1684250482]
+position = Vector2(-16, -16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D104" type="AnimatedSprite2D" parent="Clouds" unique_id=1591598230]
+position = Vector2(-16, -8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D105" type="AnimatedSprite2D" parent="Clouds" unique_id=1278661768]
+position = Vector2(-16, 0)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D106" type="AnimatedSprite2D" parent="Clouds" unique_id=148452839]
+position = Vector2(-16, 8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D107" type="AnimatedSprite2D" parent="Clouds" unique_id=1070472640]
+position = Vector2(-16, 16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D108" type="AnimatedSprite2D" parent="Clouds" unique_id=106842848]
+position = Vector2(-16, 24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D109" type="AnimatedSprite2D" parent="Clouds" unique_id=744538495]
+position = Vector2(-16, 32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D110" type="AnimatedSprite2D" parent="Clouds" unique_id=813106907]
+position = Vector2(-16, 40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D111" type="AnimatedSprite2D" parent="Clouds" unique_id=1085400735]
+position = Vector2(-16, 48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D112" type="AnimatedSprite2D" parent="Clouds" unique_id=1851798079]
+position = Vector2(-16, 56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D113" type="AnimatedSprite2D" parent="Clouds" unique_id=1602273689]
+position = Vector2(-24, -64)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D114" type="AnimatedSprite2D" parent="Clouds" unique_id=1746673374]
+position = Vector2(-24, -56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D115" type="AnimatedSprite2D" parent="Clouds" unique_id=11688931]
+position = Vector2(-24, -48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D116" type="AnimatedSprite2D" parent="Clouds" unique_id=689190245]
+position = Vector2(-24, -40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D117" type="AnimatedSprite2D" parent="Clouds" unique_id=332769250]
+position = Vector2(-24, -32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D118" type="AnimatedSprite2D" parent="Clouds" unique_id=1952916074]
+position = Vector2(-24, -24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D119" type="AnimatedSprite2D" parent="Clouds" unique_id=1550234484]
+position = Vector2(-24, -16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D120" type="AnimatedSprite2D" parent="Clouds" unique_id=241262702]
+position = Vector2(-24, -8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D121" type="AnimatedSprite2D" parent="Clouds" unique_id=512227475]
+position = Vector2(-24, 0)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D122" type="AnimatedSprite2D" parent="Clouds" unique_id=11699403]
+position = Vector2(-24, 8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D123" type="AnimatedSprite2D" parent="Clouds" unique_id=1304463512]
+position = Vector2(-24, 16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D124" type="AnimatedSprite2D" parent="Clouds" unique_id=1514410809]
+position = Vector2(-24, 24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D125" type="AnimatedSprite2D" parent="Clouds" unique_id=129894616]
+position = Vector2(-24, 32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D126" type="AnimatedSprite2D" parent="Clouds" unique_id=478668977]
+position = Vector2(-24, 40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D127" type="AnimatedSprite2D" parent="Clouds" unique_id=2124276377]
+position = Vector2(-24, 48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D128" type="AnimatedSprite2D" parent="Clouds" unique_id=1220942180]
+position = Vector2(-24, 56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D129" type="AnimatedSprite2D" parent="Clouds" unique_id=1700407810]
+position = Vector2(-32, -64)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D130" type="AnimatedSprite2D" parent="Clouds" unique_id=1131828302]
+position = Vector2(-32, -56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D131" type="AnimatedSprite2D" parent="Clouds" unique_id=626983862]
+position = Vector2(-32, -48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D132" type="AnimatedSprite2D" parent="Clouds" unique_id=425601525]
+position = Vector2(-32, -40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D133" type="AnimatedSprite2D" parent="Clouds" unique_id=1880190775]
+position = Vector2(-32, -32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D134" type="AnimatedSprite2D" parent="Clouds" unique_id=1548467870]
+position = Vector2(-32, -24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D135" type="AnimatedSprite2D" parent="Clouds" unique_id=424699975]
+position = Vector2(-32, -16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D136" type="AnimatedSprite2D" parent="Clouds" unique_id=814315297]
+position = Vector2(-32, -8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D137" type="AnimatedSprite2D" parent="Clouds" unique_id=1882197160]
+position = Vector2(-32, 0)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D138" type="AnimatedSprite2D" parent="Clouds" unique_id=1034087160]
+position = Vector2(-32, 8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D139" type="AnimatedSprite2D" parent="Clouds" unique_id=1493078485]
+position = Vector2(-32, 16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D140" type="AnimatedSprite2D" parent="Clouds" unique_id=1474358194]
+position = Vector2(-32, 24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D141" type="AnimatedSprite2D" parent="Clouds" unique_id=1320782031]
+position = Vector2(-32, 32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D142" type="AnimatedSprite2D" parent="Clouds" unique_id=575042919]
+position = Vector2(-32, 40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D143" type="AnimatedSprite2D" parent="Clouds" unique_id=1812027435]
+position = Vector2(-32, 48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D144" type="AnimatedSprite2D" parent="Clouds" unique_id=1928745704]
+position = Vector2(-32, 56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D145" type="AnimatedSprite2D" parent="Clouds" unique_id=1930926517]
+position = Vector2(-40, -64)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D146" type="AnimatedSprite2D" parent="Clouds" unique_id=1199999677]
+position = Vector2(-40, -56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D147" type="AnimatedSprite2D" parent="Clouds" unique_id=2005833047]
+position = Vector2(-40, -48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D148" type="AnimatedSprite2D" parent="Clouds" unique_id=1181220399]
+position = Vector2(-40, -40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D149" type="AnimatedSprite2D" parent="Clouds" unique_id=742058540]
+position = Vector2(-40, -32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D150" type="AnimatedSprite2D" parent="Clouds" unique_id=591681718]
+position = Vector2(-40, -24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D151" type="AnimatedSprite2D" parent="Clouds" unique_id=620712548]
+position = Vector2(-40, -16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D152" type="AnimatedSprite2D" parent="Clouds" unique_id=1529963690]
+position = Vector2(-40, -8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D153" type="AnimatedSprite2D" parent="Clouds" unique_id=370214573]
+position = Vector2(-40, 0)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D154" type="AnimatedSprite2D" parent="Clouds" unique_id=1718005650]
+position = Vector2(-40, 8)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D155" type="AnimatedSprite2D" parent="Clouds" unique_id=94131665]
+position = Vector2(-40, 16)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D156" type="AnimatedSprite2D" parent="Clouds" unique_id=1773815915]
+position = Vector2(-40, 24)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D157" type="AnimatedSprite2D" parent="Clouds" unique_id=68593102]
+position = Vector2(-40, 32)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D158" type="AnimatedSprite2D" parent="Clouds" unique_id=908392368]
+position = Vector2(-40, 40)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D159" type="AnimatedSprite2D" parent="Clouds" unique_id=1560422349]
+position = Vector2(-40, 48)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="AnimatedSprite2D160" type="AnimatedSprite2D" parent="Clouds" unique_id=262597703]
+position = Vector2(-40, 56)
+sprite_frames = SubResource("SpriteFrames_hn85u")
+autoplay = "default"
+
+[node name="Requirement" type="Label" parent="." unique_id=843375553]
+offset_left = -40.0
+offset_top = -64.0
+offset_right = 40.0
+offset_bottom = 64.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 4
+theme_override_font_sizes/font_size = 32
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=542945890]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1681302289]
+shape = SubResource("RectangleShape2D_41glk")

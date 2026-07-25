@@ -127,6 +127,7 @@ animations = [{
 radius = 7.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1164279839]
+z_index = 1
 script = ExtResource("1_cvnsp")
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=1461940228]

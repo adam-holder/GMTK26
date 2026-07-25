@@ -6,11 +6,10 @@ extends CanvasLayer
 var timer = timer_start
 var timer_ended = false
 
-var shoop_count = 0
-
 func _ready():
 	#This is so we don't need to worry about hiding/showing the HUD in main while editing
 	show()
+	$TempEnd.hide()
 	
 	Globals.shoop_collected.connect(shoop_collected)
 
@@ -36,7 +35,8 @@ func reset():
 	Globals.reset.emit()
 	timer = timer_start
 	timer_ended = false
-	shoop_count = 0
+	Globals.shoop_count = 0
+	$Sheep.text = "Sheep Collected: " + str(Globals.shoop_count)
 	$TempEnd.hide()
 	$Remaining.show()
 	$Sheep.show()
@@ -44,5 +44,5 @@ func reset():
 ##Happens when a shoop is collected
 func shoop_collected():
 	timer += Globals.shoop_mod
-	shoop_count += 1
-	$Sheep.text = "Sheep Collected: " + str(shoop_count)
+	Globals.shoop_count += 1
+	$Sheep.text = "Sheep Collected: " + str(Globals.shoop_count)
