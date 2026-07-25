@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://ciroeqmbs18wa" path="res://Scenes/hud.tscn" id="3_8gbba"]
 [ext_resource type="PackedScene" uid="uid://76ksroerm34w" path="res://Scenes/shoop.tscn" id="4_jjvhh"]
 [ext_resource type="PackedScene" uid="uid://dwdy6lg8c12iq" path="res://Scenes/gate.tscn" id="5_kry3j"]
+[ext_resource type="Texture2D" uid="uid://b45bmmgl7y1ln" path="res://Sprites/Yume.png" id="6_21xkr"]
+[ext_resource type="Texture2D" uid="uid://befyarilev8ts" path="res://Sprites/shadow.png" id="7_6bp64"]
 
 [node name="Main" type="Node2D" unique_id=1329993581]
 metadata/_edit_horizontal_guides_ = [-85.0]
@@ -72,5 +74,17 @@ required_sheep = 5
 position = Vector2(240.00002, 200)
 scale = Vector2(0.45, 0.345)
 required_sheep = 11
+
+[node name="Yume" type="Sprite2D" parent="." unique_id=1222336897]
+light_mask = 0
+position = Vector2(61, 18)
+texture = ExtResource("6_21xkr")
+
+[node name="PointLight2D" type="PointLight2D" parent="Yume" unique_id=1533405194]
+position = Vector2(2.5, -7.5)
+scale = Vector2(2, 2)
+energy = 1.7
+blend_mode = 2
+texture = ExtResource("7_6bp64")
 
 [editable path="Grass"]
