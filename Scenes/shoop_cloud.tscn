@@ -4,8 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://cnasckyow46u4" path="res://Sprites/ShoopCloud.png" id="2_afpym"]
 
 [node name="ShoopCloud" type="Node2D" unique_id=1742506697]
+process_mode = 3
 script = ExtResource("1_1re3h")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1039153575]
+process_mode = 3
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("2_afpym")

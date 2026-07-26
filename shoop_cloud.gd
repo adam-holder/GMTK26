@@ -7,6 +7,6 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	position += Vector2(shoopspeed,0) * delta
-	if position.x < -300:
+	if global_position.x < -300:
 		queue_free()
 	

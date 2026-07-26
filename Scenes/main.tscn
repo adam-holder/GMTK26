@@ -216,6 +216,9 @@ position = Vector2(706, 264)
 [node name="Shoop18" parent="Sheep" unique_id=973021309 instance=ExtResource("4_jjvhh")]
 position = Vector2(647, 275)
 
+[node name="Shoop21" parent="Sheep" unique_id=1747329699 instance=ExtResource("4_jjvhh")]
+position = Vector2(638, 360)
+
 [node name="Shoop19" parent="Sheep" unique_id=1638058359 instance=ExtResource("4_jjvhh")]
 position = Vector2(610, 242)
 

@@ -158,7 +158,9 @@ offset_bottom = 90.0
 color = Color(0, 0.44705883, 0.69803923, 1)
 
 [node name="ShoopCloudTimer" type="Timer" parent="Camera2D" unique_id=1485123164]
+process_mode = 3
 wait_time = 2.0
 autostart = true
+ignore_time_scale = true
 
 [connection signal="timeout" from="Camera2D/ShoopCloudTimer" to="." method="_on_shoop_cloud_timer_timeout"]
