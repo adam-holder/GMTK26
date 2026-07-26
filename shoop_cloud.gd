@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var shoopspeed: float = randf_range(-10, -30)
+@export var shoopspeed: float = randf_range(-5, -20)
 
 func _ready() -> void:
 	position = position + Vector2(randi_range(-200,0),randi_range(-50,200))
