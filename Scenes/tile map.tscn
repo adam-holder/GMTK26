@@ -3,6 +3,7 @@
 [ext_resource type="TileSet" uid="uid://cug51dagewp2g" path="res://Misc/new_tile_set.tres" id="1_b1k7d"]
 [ext_resource type="Texture2D" uid="uid://xlbe31myop3a" path="res://Sprites/basic3by3tiles.png" id="2_8yxna"]
 [ext_resource type="Texture2D" uid="uid://dmjt5gmp2xdx0" path="res://Sprites/HillTilemapGMTK26.png" id="2_b1k7d"]
+[ext_resource type="Texture2D" uid="uid://ci8rofrg1036s" path="res://Sprites/CloudBridgeTilemapGMTK26.png" id="4_vtrff"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b1k7d"]
 texture = ExtResource("2_8yxna")
@@ -439,6 +440,71 @@ texture = ExtResource("2_b1k7d")
 [sub_resource type="TileSet" id="TileSet_xtgm7"]
 sources/0 = SubResource("TileSetAtlasSource_55bn1")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p2ggs"]
+texture = ExtResource("4_vtrff")
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+0:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+0:3/0 = 0
+4:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_lcb4y"]
+sources/0 = SubResource("TileSetAtlasSource_p2ggs")
+
 [node name="Wall" type="TileMapLayer" unique_id=2046513715]
 tile_set = ExtResource("1_b1k7d")
 
@@ -452,3 +518,6 @@ tile_set = SubResource("TileSet_xtgm7")
 
 [node name="Backgrass" type="TileMapLayer" parent="." unique_id=1653073421]
 tile_set = ExtResource("1_b1k7d")
+
+[node name="Bridges" type="TileMapLayer" parent="." unique_id=704175991]
+tile_set = SubResource("TileSet_lcb4y")
