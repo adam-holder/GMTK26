@@ -45,6 +45,22 @@ stream = ExtResource("5_yosvi")
 stream = ExtResource("6_2qdx2")
 autoplay = true
 
+[node name="SnoozeCnt" type="Label" parent="." unique_id=632459782]
+offset_left = 343.0
+offset_top = 503.0
+offset_right = 852.0
+offset_bottom = 591.0
+theme_override_font_sizes/font_size = 42
+text = "Times Snoozed: 0"
+
+[node name="Sheep" type="Label" parent="." unique_id=1036747741]
+offset_left = 320.0
+offset_top = 56.0
+offset_right = 852.0
+offset_bottom = 156.0
+theme_override_font_sizes/font_size = 42
+text = "Sheep Counted: 0"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_2_finished"]
 [connection signal="finished" from="AudioStreamPlayer2" to="." method="_on_audio_stream_player_2_finished"]

@@ -45,4 +45,5 @@ func reset():
 func shoop_collected():
 	timer += Globals.shoop_mod
 	Globals.shoop_count += 1
+	Globals.sheep_counted += 1
 	$Sheep.text = "Sheep Count: " + str(Globals.shoop_count)

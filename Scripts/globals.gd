@@ -4,6 +4,8 @@ extends Node
 var shoop_mod = 1
 var shoop_count = 0
 var won = false
+var snoozed = 0
+var sheep_counted = 0
 
 @warning_ignore_start("unused_signal")
 ##Signal emitted when a shoop is collected
@@ -15,6 +17,7 @@ signal reset
 
 func _ready():
 	reset.connect(reset_globals)
+	timeup.connect(reset_globals)
 
 func reset_globals():
 	shoop_count = 0
