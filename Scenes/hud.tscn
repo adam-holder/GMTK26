@@ -19,7 +19,7 @@ offset_top = 96.0
 offset_right = 572.0
 offset_bottom = 196.0
 theme_override_font_sizes/font_size = 42
-text = "Sheep: 0"
+text = "Sheep Count: 0"
 
 [node name="TempEnd" type="Control" parent="." unique_id=1587933530]
 layout_mode = 3
