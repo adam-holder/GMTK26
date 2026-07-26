@@ -324,7 +324,18 @@ monitoring = false
 
 [node name="Collection" parent="EndDialog" unique_id=1263030142 instance=ExtResource("9_ynf5e")]
 position = 1
-text = "Yume: You found the Time Crown of your dreams!"
+speaker = 4
+text = "You found the Time Crown of your dreams!"
+
+[node name="Intro1" parent="EndDialog" unique_id=902703344 instance=ExtResource("9_ynf5e")]
+position = 1
+speaker = 3
+text = "Yume?!"
+
+[node name="Yume1" parent="EndDialog" unique_id=1276744258 instance=ExtResource("9_ynf5e")]
+position = 1
+speaker = 4
+text = "Now, you can sleep forever, baa~!!"
 
 [connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
