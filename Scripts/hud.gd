@@ -37,7 +37,7 @@ func reset():
 	timer = timer_start
 	timer_ended = false
 	Globals.shoop_count = 0
-	$Sheep.text = "Sheep Collected: " + str(Globals.shoop_count)
+	$Sheep.text = "Sheep Count: " + str(Globals.shoop_count)
 	$TempEnd.hide()
 	$Remaining.show()
 	$Sheep.show()
@@ -46,4 +46,4 @@ func reset():
 func shoop_collected():
 	timer += Globals.shoop_mod
 	Globals.shoop_count += 1
-	$Sheep.text = "Sheep Collected: " + str(Globals.shoop_count)
+	$Sheep.text = "Sheep Count: " + str(Globals.shoop_count)

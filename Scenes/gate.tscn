@@ -72,13 +72,13 @@ offset_bottom = 64.0
 color = Color(0.4434168, 0.21741936, 0.058882512, 1)
 
 [node name="Requirement" type="Label" parent="." unique_id=843375553]
-offset_left = -69.0
-offset_top = -80.0
-offset_right = 11.0
-offset_bottom = 48.0
+offset_left = -68.0
+offset_top = -75.0
+offset_right = 12.0
+offset_bottom = 53.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_outline_size = 4
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 20
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -92,4 +92,4 @@ shape = SubResource("RectangleShape2D_41glk")
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1009396130]
 position = Vector2(0, 25)
 sprite_frames = SubResource("SpriteFrames_1lkl7")
-animation = &"vertBefore"
+animation = &"vertAfter"

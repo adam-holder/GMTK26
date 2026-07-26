@@ -26,6 +26,9 @@ func _physics_process(_delta):
 		else:
 			body.play("walk_up")
 
+	
+	
+
 func reset():
 	position = start_pos
 	show()
