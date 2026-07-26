@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://dub5hmvnnmcs5" path="res://Scripts/shoop.gd" id="1_ca5jm"]
 [ext_resource type="Texture2D" uid="uid://bky7ndjpad3h0" path="res://Sprites/Sheep.png" id="1_kcdij"]
 [ext_resource type="Texture2D" uid="uid://befyarilev8ts" path="res://Sprites/shadow.png" id="3_4q1q2"]
+[ext_resource type="AudioStream" uid="uid://bknfkub4rsn8u" path="res://Audio/LoreAccurateSheepLow.wav" id="4_qqqyk"]
+[ext_resource type="AudioStream" uid="uid://c8rbbhnlthjdc" path="res://Audio/LoreAccurateSheepHigh.wav" id="5_rvfur"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ca5jm"]
 atlas = ExtResource("1_kcdij")
@@ -67,4 +69,12 @@ energy = 1.7
 blend_mode = 2
 texture = ExtResource("3_4q1q2")
 
+[node name="LowBaa" type="AudioStreamPlayer" parent="." unique_id=1522750482]
+stream = ExtResource("4_qqqyk")
+
+[node name="HighBaa" type="AudioStreamPlayer" parent="." unique_id=539844221]
+stream = ExtResource("5_rvfur")
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="finished" from="LowBaa" to="." method="_on_baa_finished"]
+[connection signal="finished" from="HighBaa" to="." method="_on_baa_finished"]
