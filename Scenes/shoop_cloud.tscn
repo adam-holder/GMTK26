@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://br32r5jem4h4a"]
+
+[ext_resource type="Script" uid="uid://3kb8g5vdt6ua" path="res://shoop_cloud.gd" id="1_1re3h"]
+[ext_resource type="Texture2D" uid="uid://cnasckyow46u4" path="res://Sprites/ShoopCloud.png" id="2_afpym"]
+
+[node name="ShoopCloud" type="Node2D" unique_id=1742506697]
+script = ExtResource("1_1re3h")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1039153575]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_afpym")
