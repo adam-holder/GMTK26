@@ -22,6 +22,7 @@ func _process(delta):
 		Globals.timeup.emit()
 		print("Timeup emitted!")
 		timer_ended = true
+		get_tree().change_scene_to_file('res://Scenes/title.tscn')
 		$Remaining.hide()
 		$Sheep.hide()
 		$TempEnd.show()

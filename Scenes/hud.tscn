@@ -6,26 +6,27 @@
 script = ExtResource("1_e0onf")
 
 [node name="Remaining" type="Label" parent="." unique_id=2093261481]
-offset_left = 16.0
-offset_top = 8.0
-offset_right = 215.0
-offset_bottom = 42.0
-theme_override_font_sizes/font_size = 24
+offset_left = 40.0
+offset_top = 24.0
+offset_right = 549.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 42
 text = "Time Remaining: "
 
 [node name="Sheep" type="Label" parent="." unique_id=1561989366]
-offset_left = 16.0
-offset_top = 48.0
-offset_right = 227.0
-offset_bottom = 82.0
-theme_override_font_sizes/font_size = 24
-text = "Sheep Collected: 0"
+offset_left = 40.0
+offset_top = 96.0
+offset_right = 572.0
+offset_bottom = 196.0
+theme_override_font_sizes/font_size = 42
+text = "Sheep: 0"
 
 [node name="TempEnd" type="Control" parent="." unique_id=1587933530]
 layout_mode = 3
 anchors_preset = 0
 
 [node name="Label" type="Label" parent="TempEnd" unique_id=439582751]
+visible = false
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 576.0
@@ -38,6 +39,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Reset" type="Button" parent="TempEnd" unique_id=1191694871]
+visible = false
 layout_mode = 0
 offset_left = 552.0
 offset_top = 376.0

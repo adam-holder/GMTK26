@@ -1,13 +1,21 @@
 [gd_scene format=3 uid="uid://82xj3ynhejth"]
 
-[ext_resource type="Script" uid="uid://bnmig2sa4ygiu" path="res://Scenes/title.gd" id="1_q2qps"]
+[ext_resource type="Script" uid="uid://bnmig2sa4ygiu" path="res://Scripts/title.gd" id="1_q2qps"]
 [ext_resource type="Texture2D" uid="uid://d6kf8cc5exy2" path="res://Sprites/Bedroom.png" id="1_w31pl"]
 [ext_resource type="Texture2D" uid="uid://xkgj3yxisk62" path="res://Sprites/SnoozeButton1.png" id="2_fp2oq"]
 [ext_resource type="Texture2D" uid="uid://dgyd1vnrn7w1x" path="res://Sprites/SnoozeButton2.png" id="3_q2qps"]
 [ext_resource type="AudioStream" uid="uid://ccav4wajhdhhy" path="res://Audio/SlowVer.wav" id="5_yosvi"]
+[ext_resource type="AudioStream" uid="uid://dfn7upjd8xg5p" path="res://Audio/AlarmTrill.wav" id="6_2qdx2"]
 
 [node name="Title" type="Node2D" unique_id=1820968636]
 script = ExtResource("1_q2qps")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1140986548]
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 1168.0
+offset_bottom = 656.0
+color = Color(0, 0, 0, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1816764006]
 position = Vector2(565, 321)
@@ -26,6 +34,11 @@ texture_hover = ExtResource("3_q2qps")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=671585101]
 stream = ExtResource("5_yosvi")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=165625034]
+stream = ExtResource("6_2qdx2")
 autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_2_finished"]
+[connection signal="finished" from="AudioStreamPlayer2" to="." method="_on_audio_stream_player_2_finished"]
