@@ -46,20 +46,20 @@ stream = ExtResource("6_2qdx2")
 autoplay = true
 
 [node name="SnoozeCnt" type="Label" parent="." unique_id=632459782]
-offset_left = 343.0
-offset_top = 503.0
-offset_right = 852.0
-offset_bottom = 591.0
-theme_override_font_sizes/font_size = 42
+offset_left = 360.0
+offset_top = 64.0
+offset_right = 869.0
+offset_bottom = 152.0
+theme_override_font_sizes/font_size = 30
 text = "Times Snoozed: 0"
 
 [node name="Sheep" type="Label" parent="." unique_id=1036747741]
-offset_left = 320.0
-offset_top = 56.0
-offset_right = 852.0
-offset_bottom = 156.0
-theme_override_font_sizes/font_size = 42
-text = "Sheep Counted: 0"
+offset_left = 360.0
+offset_top = 512.0
+offset_right = 892.0
+offset_bottom = 612.0
+theme_override_font_sizes/font_size = 30
+text = "Total Sheep Counted: 0"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_2_finished"]
