@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://b45bmmgl7y1ln" path="res://Sprites/Yume.png" id="6_21xkr"]
 [ext_resource type="Texture2D" uid="uid://befyarilev8ts" path="res://Sprites/shadow.png" id="7_6bp64"]
 [ext_resource type="AudioStream" uid="uid://cio3lckpxxact" path="res://Audio/MarimbaVer.wav" id="8_344ge"]
+[ext_resource type="PackedScene" uid="uid://bbbf17i6lm337" path="res://Scenes/interactable.tscn" id="9_hptm8"]
+[ext_resource type="PackedScene" uid="uid://bo8nejxl65m3w" path="res://Scenes/dialog_page.tscn" id="9_ynf5e"]
 
 [sub_resource type="GDScript" id="GDScript_344ge"]
 script/source = "extends Node2D
@@ -15,7 +17,8 @@ script/source = "extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$StartDialog.dialogue_mode()
+	$StartDialog.Advance()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -139,8 +142,42 @@ blend_mode = 2
 texture = ExtResource("7_6bp64")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1832809024]
+process_mode = 3
 stream = ExtResource("8_344ge")
 autoplay = true
+
+[node name="StartDialog" parent="." unique_id=1218634651 instance=ExtResource("9_hptm8")]
+position = Vector2(62, 23)
+scale = Vector2(1.19, 1.19)
+monitoring = false
+
+[node name="Intro1" parent="StartDialog" unique_id=1111281355 instance=ExtResource("9_ynf5e")]
+position = 1
+text = "I think I hear my alarm."
+
+[node name="Intro2" parent="StartDialog" unique_id=1993373697 instance=ExtResource("9_ynf5e")]
+position = 1
+text = "I just want to dream a little longer"
+
+[node name="Intro3" parent="StartDialog" unique_id=1390457056 instance=ExtResource("9_ynf5e")]
+position = 1
+text = "I feel like I've had this dream before"
+
+[node name="Yume1" parent="StartDialog" unique_id=403264239 instance=ExtResource("9_ynf5e")]
+position = 1
+text = "Yume: Hero, can't you stay? I need my time crown."
+
+[node name="Hero1" parent="StartDialog" unique_id=2041497118 instance=ExtResource("9_ynf5e")]
+position = 1
+text = "Hero: I'll do it for you Yume."
+
+[node name="Yume2" parent="StartDialog" unique_id=779353963 instance=ExtResource("9_ynf5e")]
+position = 1
+text = "Yume: You'll have to count sheep to keep the dream alive."
+
+[node name="Hero2" parent="StartDialog" unique_id=890967091 instance=ExtResource("9_ynf5e")]
+position = 1
+text = "Hero: You can count on me."
 
 [connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
 

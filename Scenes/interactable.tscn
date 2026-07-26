@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bbbf17i6lm337"]
+
+[ext_resource type="Script" uid="uid://dgmtnxobt2ycm" path="res://Scripts/interactable.gd" id="1_8s6bd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3aalw"]
+
+[node name="Interactable" type="Area2D" unique_id=1218634651]
+process_mode = 3
+collision_layer = 2
+monitorable = false
+script = ExtResource("1_8s6bd")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1885382786]
+visible = false
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=899948908]
+shape = SubResource("RectangleShape2D_3aalw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

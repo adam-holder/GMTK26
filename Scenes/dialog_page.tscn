@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bo8nejxl65m3w"]
+
+[ext_resource type="Script" uid="uid://daktiljnyomfo" path="res://Scripts/dialog_page.gd" id="1_yfpx6"]
+
+[node name="Dialog Page" type="CanvasLayer" unique_id=1111281355]
+process_mode = 3
+layer = 2
+script = ExtResource("1_yfpx6")
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=208078923]
+z_index = -1
+offset_top = 496.0
+offset_right = 1152.0
+offset_bottom = 600.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=552455653]
+offset_top = 496.0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 0.6627451)
+
+[node name="Space" type="RichTextLabel" parent="ColorRect" unique_id=1615255784]
+visible = false
+z_index = 1000
+layout_mode = 0
+offset_left = 1032.0
+offset_top = 104.0
+offset_right = 1152.0
+offset_bottom = 144.0
+text = "Space..."
+
+[node name="Title" type="ColorRect" parent="." unique_id=27683441]
+visible = false
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabelT" type="RichTextLabel" parent="Title" unique_id=940143465]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 312.0
+offset_right = 960.0
+offset_bottom = 438.0
+theme_override_font_sizes/normal_font_size = 22
+text = "This is a dialog box! Whatcha think, huh?"
+horizontal_alignment = 1
+
+[node name="Space" type="RichTextLabel" parent="Title" unique_id=1263967803]
+visible = false
+layout_mode = 0
+offset_left = 1032.0
+offset_top = 600.0
+offset_right = 1152.0
+offset_bottom = 640.0
+text = "Space..."
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1007411117]
+offset_left = 74.0
+offset_top = 514.0
+offset_right = 1078.0
+offset_bottom = 631.0
+theme_override_font_sizes/normal_font_size = 22
+text = "This is a dialog box! Whatcha think, huh?"
+metadata/_edit_lock_ = true
+
+[node name="RichTextLabelP" type="RichTextLabel" parent="." unique_id=281765396]
+visible = false
+offset_left = 416.0
+offset_top = 514.0
+offset_right = 1104.0
+offset_bottom = 640.0
+theme_override_font_sizes/normal_font_size = 22
+text = "This is a dialog box! Whatcha think, huh?"
+
+[node name="Portrait" type="Sprite2D" parent="." unique_id=217510926]
+visible = false
+position = Vector2(192, 456)
+scale = Vector2(8, 8)
+region_enabled = true
+region_rect = Rect2(0, 0, 48, 48)
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
