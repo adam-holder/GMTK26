@@ -1,11 +1,70 @@
 [gd_scene format=3 uid="uid://bo8nejxl65m3w"]
 
 [ext_resource type="Script" uid="uid://daktiljnyomfo" path="res://Scripts/dialog_page.gd" id="1_yfpx6"]
+[ext_resource type="Texture2D" uid="uid://cc7xktx17j6lg" path="res://Sprites/playerportrait.png" id="2_3jqv2"]
+[ext_resource type="Texture2D" uid="uid://c36n1fmmvsj21" path="res://Sprites/yumeportrait.png" id="3_x2rr3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjdir"]
+atlas = ExtResource("2_3jqv2")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mn18m"]
+atlas = ExtResource("2_3jqv2")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ke00h"]
+atlas = ExtResource("2_3jqv2")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8du5e"]
+atlas = ExtResource("3_x2rr3")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xtgm7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjdir")
+}],
+"loop": 1,
+"name": &"hero_happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mn18m")
+}],
+"loop": 1,
+"name": &"hero_sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ke00h")
+}],
+"loop": 1,
+"name": &"hero_sleep",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8du5e")
+}],
+"loop": 1,
+"name": &"yume",
+"speed": 5.0
+}]
 
 [node name="Dialog Page" type="CanvasLayer" unique_id=1111281355]
 process_mode = 3
 layer = 2
 script = ExtResource("1_yfpx6")
+
+[node name="Portrait" type="AnimatedSprite2D" parent="." unique_id=611440332]
+position = Vector2(168, 368)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_xtgm7")
+animation = &"yume"
 
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=208078923]
 z_index = -1
@@ -18,10 +77,9 @@ color = Color(0, 0, 0, 1)
 offset_top = 496.0
 offset_right = 1152.0
 offset_bottom = 648.0
-color = Color(0, 0, 0, 0.6627451)
+color = Color(0, 0, 0, 1)
 
 [node name="Space" type="RichTextLabel" parent="ColorRect" unique_id=1615255784]
-visible = false
 z_index = 1000
 layout_mode = 0
 offset_left = 1032.0
@@ -37,6 +95,7 @@ offset_bottom = 648.0
 color = Color(0, 0, 0, 1)
 
 [node name="RichTextLabelT" type="RichTextLabel" parent="Title" unique_id=940143465]
+visible = false
 layout_mode = 0
 offset_left = 192.0
 offset_top = 312.0
@@ -72,12 +131,5 @@ offset_right = 1104.0
 offset_bottom = 640.0
 theme_override_font_sizes/normal_font_size = 22
 text = "This is a dialog box! Whatcha think, huh?"
-
-[node name="Portrait" type="Sprite2D" parent="." unique_id=217510926]
-visible = false
-position = Vector2(192, 456)
-scale = Vector2(8, 8)
-region_enabled = true
-region_rect = Rect2(0, 0, 48, 48)
 
 [connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]

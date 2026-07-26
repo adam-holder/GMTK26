@@ -267,31 +267,33 @@ monitoring = false
 
 [node name="Intro1" parent="StartDialog" unique_id=1111281355 instance=ExtResource("9_ynf5e")]
 position = 1
-text = "I think I hear my alarm."
+speaker = 1
+text = "I think I hear my alarm. I just want to dream a little longer..."
 
-[node name="Intro2" parent="StartDialog" unique_id=1993373697 instance=ExtResource("9_ynf5e")]
+[node name="Intro2" parent="StartDialog" unique_id=1390457056 instance=ExtResource("9_ynf5e")]
 position = 1
-text = "I just want to dream a little longer"
-
-[node name="Intro3" parent="StartDialog" unique_id=1390457056 instance=ExtResource("9_ynf5e")]
-position = 1
-text = "I feel like I've had this dream before"
+speaker = 3
+text = "...I feel like I've had this dream before."
 
 [node name="Yume1" parent="StartDialog" unique_id=403264239 instance=ExtResource("9_ynf5e")]
 position = 1
-text = "Yume: Hero, can't you stay? I need my time crown."
+speaker = 4
+text = "Hero, can't you stay? I need my time crown, baa~"
 
 [node name="Hero1" parent="StartDialog" unique_id=2041497118 instance=ExtResource("9_ynf5e")]
 position = 1
-text = "Hero: I'll do it for you Yume."
+speaker = 2
+text = "I'll do it for you Yume!"
 
 [node name="Yume2" parent="StartDialog" unique_id=779353963 instance=ExtResource("9_ynf5e")]
 position = 1
-text = "Yume: You'll have to count sheep to keep the dream alive."
+speaker = 4
+text = "You'll have to count sheep to keep the dream alive, baa~"
 
 [node name="Hero2" parent="StartDialog" unique_id=890967091 instance=ExtResource("9_ynf5e")]
 position = 1
-text = "Hero: You can count on me."
+speaker = 2
+text = "You can count on me."
 
 [node name="Crown" type="AnimatedSprite2D" parent="." unique_id=2108006787]
 position = Vector2(624, 463)
