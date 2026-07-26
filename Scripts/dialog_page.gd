@@ -6,7 +6,7 @@ extends CanvasLayer
 @export var position: SIDE
 enum SIDE {TOP, BOTTOM}
 @export var speaker: NAME
-enum NAME {NONE}
+enum NAME {NONE,HERO_SLEEP,HERO_HAPPY,HERO_SAD,YUME}
 @export var vertical_offset: int = -500
 @export var horizontal_offset: int = 0
 @export_multiline var text: String
@@ -38,16 +38,14 @@ func _ready():
 	txt.visible_characters=0
 
 func set_portrait():
-	#if speaker == NAME.HILLARY:
-		#por.region_rect = Rect2(0,0,48,48)
-	#elif speaker == NAME.JESSICA:
-		#por.region_rect = Rect2(48,0,48,48)
-	#elif speaker == NAME.RICHARD:
-		#por.region_rect = Rect2(96,0,48,48)
-	#elif speaker == NAME.TERRY:
-		#por.region_rect = Rect2(144,0,48,48)
-	#elif speaker == NAME.HILLARY2:
-		#por.region_rect = Rect2(192,0,48,48)
+	if speaker == NAME.HERO_SLEEP:
+		por.play("hero_sleep")
+	elif speaker == NAME.HERO_HAPPY:
+		por.play("hero_happy")
+	elif speaker == NAME.HERO_SAD:
+		por.play("hero_sad")
+	elif speaker == NAME.YUME:
+		por.play("yume")
 	pass
 	
 func _process(delta):
