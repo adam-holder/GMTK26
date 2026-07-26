@@ -36,7 +36,6 @@ func reset():
 	Globals.reset.emit()
 	timer = timer_start
 	timer_ended = false
-	Globals.shoop_count = 0
 	$Sheep.text = "Sheep Count: " + str(Globals.shoop_count)
 	$TempEnd.hide()
 	$Remaining.show()

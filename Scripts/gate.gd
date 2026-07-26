@@ -12,7 +12,7 @@ func _ready():
 
 func shoop_check():
 	required_sheep -= 1
-	#$Requirement.text = str(required_sheep)
+	$Requirement.text = str(required_sheep)
 	if required_sheep <= 0:
 		Globals.shoop_collected.disconnect(shoop_check)
 		if vertical: $Sprite.play("vertAfter")

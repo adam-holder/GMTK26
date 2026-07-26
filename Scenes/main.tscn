@@ -26,6 +26,16 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_area_2d_body_entered(body):
+	$EndDialog.dialogue_mode()
+	$EndDialog.Advance()
+
+
+func _on_end_dialog_dialog_closed():
+	Globals.won = true
+	get_tree().change_scene_to_file('res://Scenes/title.tscn')
 "
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_55bn1"]
@@ -300,11 +310,22 @@ autoplay = "default"
 
 [node name="Area2D" type="Area2D" parent="." unique_id=329569791]
 position = Vector2(624, 463)
+monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=750719496]
 position = Vector2(15, -9)
 shape = SubResource("RectangleShape2D_xtgm7")
 
+[node name="EndDialog" parent="." unique_id=1150027501 instance=ExtResource("9_hptm8")]
+position = Vector2(648, 474)
+monitoring = false
+
+[node name="Collection" parent="EndDialog" unique_id=1263030142 instance=ExtResource("9_ynf5e")]
+position = 1
+text = "Yume: You found the Time Crown of your dreams!"
+
 [connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="dialog_closed" from="EndDialog" to="." method="_on_end_dialog_dialog_closed"]
 
 [editable path="Grass"]
