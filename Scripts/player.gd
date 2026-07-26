@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+@onready var shoopCloud: PackedScene = preload("res://Scenes/shoop_cloud.tscn")
 @onready var body = $Body
 var start_pos
 
@@ -34,3 +35,10 @@ func reset():
 	show()
 
 func timeup(): hide()
+
+
+func _on_shoop_cloud_timer_timeout() -> void:
+	var shoop_instance = shoopCloud.instantiate()
+	shoop_instance.global_position = global_position
+	shoop_instance.z_index = -21
+	$"../ShoopClouds".add_child(shoop_instance)
